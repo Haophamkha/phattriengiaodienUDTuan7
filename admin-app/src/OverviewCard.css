@@ -1,0 +1,46 @@
+.overview-card {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Cho phép thẻ mở rộng để lấp đầy không gian */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .card-icon {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .card-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .card-change {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #28a745;
+  }
+  
+  .change-arrow {
+    margin-right: 5px;
+  }
+  
+  .change-text {
+    font-weight: 500;
+  }

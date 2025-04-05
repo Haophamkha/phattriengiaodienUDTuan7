@@ -1,0 +1,21 @@
+.overview-section {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff69b4;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+  }
+  
+  .cards-container > * {
+    flex: 1; /* Mỗi thẻ sẽ chiếm đều không gian */
+  }
