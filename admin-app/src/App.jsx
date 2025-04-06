@@ -1,8 +1,9 @@
 import './App.css'
-import NavBar from './NavBar'
-import Dashboard from './Daskboard'
-import OverviewSection from './OverviewSection'
-import DetailedReport from './DetailedReport'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './Component/NavBar'
+import Dashboard from './Component/Daskboard'
+import OverviewSection from './Component/OverviewSection'
+import DetailedReport from './Component/DetailedReport'
 function App() {
   return (
     <>
