@@ -2,8 +2,8 @@
   display: grid;
   grid-template-areas:
     "logo daskboard"
-    "logo overview"
-    "logo detail";
+    "logo overviewDetail"
+    "logo overviewDetail";
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 3fr 6fr;
   padding: 5px;
@@ -28,10 +28,19 @@
 .container > div.logo {
   grid-area: logo;
 }
-.container > div.overview {
+.container > div.overviewDetail {
+  grid-area: overviewDetail;
+  display: grid;
+  grid-template-areas:
+    "overview"
+    "detail";
+    border: 1px solid gray;
+  grid-template-rows: 1fr 2fr;
+}
+div.overviewDetail > div.overview {
   grid-area: overview;
 }
-.container > div.detail {
+div.overviewDetail > div.detail {
   grid-area: detail;
 }
 
@@ -60,15 +69,30 @@ tItem ul{
  align-items: center;
  gap: 10px;
 }
-.listItem li:hover{
-  background-color: #fb92b5;
-  color: white;
+
+
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  transition: 0.3s;
 }
-.listItem li.active{
+
+.nav-link:hover {
+  background-color: #fb92b5;
+  border-radius: 8px;
+}
+
+.nav-link.active {
   background-color: #f84c84;
   color: white;
-  
+  border-radius: 8px;
 }
+
 .logo{
   display: flex;
   
